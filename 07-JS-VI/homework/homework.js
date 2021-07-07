@@ -22,6 +22,7 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
+  cb(numeros.reduce((a, v) => (a += v)));
 }
 
 function forEach(array, cb) {
@@ -53,5 +54,5 @@ module.exports = {
   sumarArray,
   forEach,
   map,
-  filter
+  filter,
 };
